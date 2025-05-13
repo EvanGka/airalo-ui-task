@@ -53,7 +53,7 @@ public class PackagePage extends BasePage {
     WebElement price;
 
 
-    //The me Map to store the details of the eSIM
+    //Use Map to store the details of the eSIM
     public Map<String, String> getPackageDetails() {
         Map<String, String> details = new HashMap<>();
         details.put("Coverage", coverage.getText().trim());

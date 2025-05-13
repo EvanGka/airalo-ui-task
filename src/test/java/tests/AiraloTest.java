@@ -12,10 +12,10 @@ import java.util.Map;
 import static org.testng.Assert.assertEquals;
 
 /*
-This is my test clas
+This is my test class
 BeforeClass: I create a ChromeDriver
 Test: Validate the details of the Local Japan eSIM
-AfterClass: quite the broswer
+AfterClass: quit the browser
  */
 public class AiraloTest {
 
