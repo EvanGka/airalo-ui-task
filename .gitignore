@@ -1,0 +1,18 @@
+# === OS Files ===
+.DS_Store
+
+# === IDE Files ===
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# === Build Directories ===
+target/
+build/
+
+# === VSCode ===
+.vscode/
+
+# === Maven Wrapper ===
+.mvn/wrapper/maven-wrapper.jar
