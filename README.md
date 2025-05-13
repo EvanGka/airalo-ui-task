@@ -6,8 +6,8 @@ Simple Selenium Automation framework to test the following flow:
 4. Verify Package Details,"In the popup, check: Title: Moshi Moshi, Coverage: Japan, Data: 1 GB, Validity: 7 days, Price: $4.50"
 
 How to Run:
-Clone the repo
-Run using `mvn test` or right-click the test class in your IDE.
+- Clone the repo
+- Run the tests either using `mvn test` (through testng) or with right-click the test class in your IDE.
 
 Approach
 - I'm using Page Object Model (POM) to separate pages logic and elements from test cases and data
