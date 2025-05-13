@@ -11,6 +11,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/*
+This is the Package page (the popup with the eSIM deals for Japan Local)
+ */
+
 public class PackagePage extends BasePage {
 
     public PackagePage(WebDriver driver) {
@@ -29,6 +33,7 @@ public class PackagePage extends BasePage {
     @FindBy(xpath = "//button[contains(text(),'BUY NOW')]")
     List<WebElement> buyNowButtons;
 
+    //wait for at least on Buy Now button to be displayed and click on it
     public void selectFirstPackage() {
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(driver -> buyNowButtons.size() > 0);
@@ -48,6 +53,7 @@ public class PackagePage extends BasePage {
     WebElement price;
 
 
+    //The me Map to store the details of the eSIM
     public Map<String, String> getPackageDetails() {
         Map<String, String> details = new HashMap<>();
         details.put("Coverage", coverage.getText().trim());

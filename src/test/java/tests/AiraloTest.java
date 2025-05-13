@@ -11,6 +11,12 @@ import java.util.Map;
 
 import static org.testng.Assert.assertEquals;
 
+/*
+This is my test clas
+BeforeClass: I create a ChromeDriver
+Test: Validate the details of the Local Japan eSIM
+AfterClass: quite the broswer
+ */
 public class AiraloTest {
 
     WebDriver driver;
@@ -38,12 +44,12 @@ public class AiraloTest {
 
         assertEquals(details.get("Coverage"), "Japan");
         assertEquals(details.get("Data"), "1 GB");
-        assertEquals(details.get("Validity"), "7 days");
-        assertEquals(details.get("Price"), "$4.50");
+        assertEquals(details.get("Validity"), "7 Days");
+        assertEquals(details.get("Price"), "$4.50 USD");
     }
 
-//    @AfterClass
-//    public void tearDown() {
-//        driver.quit();
-//    }
+    @AfterClass
+    public void tearDown() {
+        driver.quit();
+    }
 }

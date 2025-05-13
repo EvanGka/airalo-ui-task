@@ -8,6 +8,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+/*
+this the home page where we locate the search input field, search fro Japan and make sure the Local Japan option
+ */
+
 public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
